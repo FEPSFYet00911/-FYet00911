@@ -1,299 +1,206 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
+<html>
 
- <html>
-
-<head>   
-
-  <img src= "WebBanner2023.png" alt="Banner" width="900" height="300">
- 
+<head>
+  <img src="WebBanner2023.png" alt="Banner" width="900" height="300">
   <h1><b>ENG0018 Computer Laboratory 2023/24</b></h1>
   <h2>Student URN: 6763541</h2>
   <hr>
- <h2 style=”fontfamily:calibri:”><b>Conference paper: Space Solar Stations: A Sustainable Energy Solution for the Future </b></h2>
- <hr>
-  </head> 
+  <h2 style="font-family: calibri;"><b>Conference paper: Space Solar Stations: A Sustainable Energy Solution for the Future</b></h2>
+  <hr>
 
-
-
-  
-  <!style for Tables>
+  <!-- Style for Tables -->
   <style>
-     table {
+    table {
       font-family: arial, sans-serif;
       border-collapse: collapse;
       width: 30%;
-     }
+    }
 
+    td,
+    th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
 
-   td; th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-   }
-   tr:nth-child(even) {
+    tr:nth-child(even) {
       background-color: #dddddd;
-   }
+    }
 
+    p.ex1 {
+      margin-left: 250px;
+    }
+  </style>
 
-   </style>
+  <style>
+    .mySlides {
+      display: none;
+    }
+  </style>
 
- <style>
-  p.ex1 {
-    margin-left: 250px;
-  }
-  </style>  
- </head>
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <style>
-   .mySlides {display:none;}
-   </style>
-  <body style="background-color:#FFFFFF;margin-left:50px;">
+    body {
+      background-color: #FFFFFF;
+      margin-left: 50px;
+    }
+  </style>
+</head>
 
+<body>
 
-  
-  
-   
-   <!table of contents>
-   <table>
+  <!-- Table of Contents -->
+  <table>
+    <tr>
+      <th><h3>Table of Contents</h3></th>
+    </tr>
+    <tr>
+      <td><a href="#Abstract">Abstract</a></td>
+    </tr>
+    <tr>
+      <td><a href="#Introduction">Introduction</a></td>
+    </tr>
+    <tr>
+      <td><a href="#OrigamiSolarPanels">Origami Solar Panels</a></td>
+    </tr>
+    <tr>
+      <td><a href="#FutureApplications">Future Applications</a></td>
+    </tr>
+    <tr>
+      <td><a href="#Sustainability">Sustainability</a></td>
+    </tr>
+    <tr>
+      <td><a href="#EfficiencyofSpaceSolarStations">Efficiency of Space Solar Stations</a></td>
+    </tr>
+    <tr>
+      <td><a href="#SpaceSolarPowerInitiative">Space Solar Power Initiative (SSPI)</a></td>
+    </tr>
+    <tr>
+      <td><a href="#TheModularTileArchitectureofSSPI">The Modular-Tile Architecture of SSPI</a></td>
+    </tr>
+    <tr>
+      <td><a href="#ChallengesandFutureDirections">Challenges and Future Directions</a></td>
+    </tr>
+    <tr>
+      <td><a href="#Conclusion">Conclusion</a></td>
+    </tr>
+    <tr>
+      <td><a href="#References">References</a></td>
+    </tr>
+  </table>
 
-    <tr>  
- <th><h3> Table of contents</h3></th>
-    </tr>  
-    <tr>
-       <td><a href="#Abstract">Abstract</td>
-    </tr>  
-    <tr>
-       <td><a href="#introduction">Introduction</td>
-    </tr>  
-    <tr>
-       <td><a href="#Origami solar panels">Origami solar panels</td>
-    </tr>  
-    <tr>
-       <td><a href="#Future Applications">Future Applications</td>
-    </tr>
-    <tr>
-       <td><a href="#Sustainability ">Sustainability</td>
-    </tr>
-     <tr>
-       <td><a href="#Efficiency of Space Solar Stations">Efficiency of Space Solar Stations</td>
-    </tr>
-     <tr>
-       <td><a href="#Space Solar Power Initiative (SSPI) ">Space Solar Power Initiative (SSPI) </td>
-    </tr>
-    <tr>
-       <td><a href="#The Modular-Tile Architecture of SSPI ">The Modular-Tile Architecture of SSPI </td>
-    </tr>
-    <tr>
-       <td><a href="#Challenges and Future Directions ">Challenges and Future Directions </td>
-    </tr>
-    <tr>
-       <td><a href="#Conclusion ">Conclusion </td>
-    </tr>
-    <tr>
-       <td><a href="#References">References</td>
-   </tr>
-   </table>
-
-    <h3 id="Abstract">Abstract</h3>
-   <p class="ex1">
-    <pre>
- In the middle of an escalating global energy demands and the urgent need for environmental 
- preservation, space solar stations emerge as a possibility of sustainable and innovative energy 
- solutions. This paper delves into their efficiency, potential applications, particularly the role of
- origami solar panels in advancing sustainability and underscores the pioneering work of Sergio
- Pellegrino in this avant-garde field. (Atwater, Hajimiri, & Pellegrino, 2015). 
-    </pre>
+  <!-- Abstract -->
+  <h3 id="Abstract">Abstract</h3>
+  <p class="ex1">
+    In the middle of escalating global energy demands and the urgent need for environmental preservation, space solar stations
+    emerge as a possibility of sustainable and innovative energy solutions. This paper delves into their efficiency, potential
+    applications, particularly the role of origami solar panels in advancing sustainability, and underscores the pioneering work
+    of Sergio Pellegrino in this avant-garde field. (Atwater, Hajimiri, & Pellegrino, 2015).
   </p>
 
-
+  <!-- Introduction -->
   <h3 id="Introduction">Introduction</h3>
-   <p class="ex1">
-    <pre>
- As the world grapples with the dual challenges of climate change and depleting fossil fuel reserves, the quest for sustainable,
- efficient energy alternatives becomes increasingly critical. This analysis examines the viability and
- potential benefits of space solar stations. It focuses on their capability to revolutionize energy
- efficiency and sustainability while addressing the inherent technological and logistical challenges (Atwater,
- Hajimiri, & Pellegrino, 2015). 
-
-     </pre>
-
-       <h3 id="Origami solar panels">Origami solar panels</h3>
-   <p class="ex1">
-    <pre>
-Representing a revolutionary approach, origami solar panels are a quintessential example of 
-innovative engineering, maximizing solar energy collection in the vastness of space. These panels,
-characterized by their foldable nature, facilitate compact storage and transportation, thereby
-significantly reducing launch costs.  Aggiungi ref
-Once deployed, they expand, offering a larger surface area for optimal sunlight absorption. Central
-to this technology is the work of Sergio Pellegrino, who emphasizes the use of lightweight materials
-and origami-inspired design to achieve unparalleled efficiency and resilience in the harsh conditions
-of space. (Pellegrino, 2015). 
-  </p> 
-     
-     
-<h3 id="Future Applications">Future Applications</h3>
-<p class="ex1">  
-     <pre>
-The potential applications of space solar stations are vast and transformative. Their ability to provide
-a consistent and reliable energy supply is particularly vital in regions with limited access to
-traditional power sources, including remote areas and those affected by natural disasters. Aggiungi
-ref 
-Beyond terrestrial benefits, these stations could play a pivotal role in future space missions, offering
-a sustainable power source for long-duration space travel and extraterrestrial settlements. 
-(Atwater, Hajimiri, & Pellegrino, 2015). 
- 
+  <p class="ex1">
+    As the world grapples with the dual challenges of climate change and depleting fossil fuel reserves, the quest for sustainable,
+    efficient energy alternatives becomes increasingly critical. This analysis examines the viability and potential benefits of
+    space solar stations. It focuses on their capability to revolutionize energy efficiency and sustainability while addressing
+    the inherent technological and logistical challenges (Atwater, Hajimiri, & Pellegrino, 2015).
   </p>
 
+  <!-- Origami Solar Panels -->
+  <h3 id="OrigamiSolarPanels">Origami Solar Panels</h3>
+  <p class="ex1">
+    Representing a revolutionary approach, origami solar panels are a quintessential example of innovative engineering, maximizing
+    solar energy collection in the vastness of space. These panels, characterized by their foldable nature, facilitate compact
+    storage and transportation, thereby significantly reducing launch costs. Once deployed, they expand, offering a larger surface
+    area for optimal sunlight absorption. Central to this technology is the work of Sergio Pellegrino, who emphasizes the use of
+    lightweight materials and origami-inspired design to achieve unparalleled efficiency and resilience in the harsh conditions of
+    space. (Pellegrino, 2015).
+  </p>
 
-<h3 id="Sustainability">Sustainability</h3>
-   <p class="ex1">
-    <pre>
-At the forefront of Pellegrino's research is a commitment to sustainability. By integrating innovative
-design with lightweight, durable materials, the environmental impact of constructing and launching
-these stations can be significantly reduced. Aggiungi ref 
-The challenge, however, lies in the maintenance and longevity of these structures, given their
-remote location in space. 
-This necessitates the development of self-sustaining, robust systems capable of operating in the vacuum of space with minimal need for intervention.  
+  <!-- Future Applications -->
+  <h3 id="FutureApplications">Future Applications</h3>
+  <p class="ex1">
+    The potential applications of space solar stations are vast and transformative. Their ability to provide a consistent and reliable
+    energy supply is particularly vital in regions with limited access to traditional power sources, including remote areas and those
+    affected by natural disasters. Beyond terrestrial benefits, these stations could play a pivotal role in future space missions,
+    offering a sustainable power source for long-duration space travel and extraterrestrial settlements. (Atwater, Hajimiri, &
+    Pellegrino, 2015).
+  </p>
 
-    </p>       
+  <!-- Sustainability -->
+  <h3 id="Sustainability">Sustainability</h3>
+  <p class="ex1">
+    At the forefront of Pellegrino's research is a commitment to sustainability. By integrating innovative design with lightweight,
+    durable materials, the environmental impact of constructing and launching these stations can be significantly reduced. The
+    challenge, however, lies in the maintenance and longevity of these structures, given their remote location in space. This
+    necessitates the development of self-sustaining, robust systems capable of operating in the vacuum of space with minimal need
+    for intervention.
+  </p>
 
+  <!-- Efficiency of Space Solar Stations -->
+  <h3 id="EfficiencyofSpaceSolarStations">Efficiency of Space Solar Stations</h3>
+  <p class="ex1">
+    These stations excel in efficiency, harnessing solar energy in a way that is not feasible on Earth. Unhindered by atmospheric
+    conditions, their advanced solar panels can continuously capture solar energy, offering a significantly higher energy output
+    compared to terrestrial systems. Despite these advantages, the initial costs of production and the complexities of maintenance
+    pose significant challenges that must be addressed to make this technology feasible and scalable.
+  </p>
 
+  <!-- Space Solar Power Initiative -->
+  <h3 id="SpaceSolarPowerInitiative">Space Solar Power Initiative (SSPI)</h3>
+  <p class="ex1">
+    The Space Solar Power Initiative (SSPI) represents a collaborative effort aimed at harnessing the potential of space-based solar
+    power. This initiative involves groundbreaking research and development in the field of space solar stations, including the
+    innovative Modular-Tile Architecture discussed later in this paper.
+  </p>
 
- <h3 id="Efficiency of Space Solar Stations ">Efficiency of Space Solar Stations</h3>
-   <p class="ex1">
-    <pre>
-These stations excel in efficiency, harnessing solar energy in a way that is not feasible on Earth.
-Unhindered by atmospheric conditions, their advanced solar panels can continuously capture solar
-energy, offering a significantly higher energy output compared to terrestrial systems. Despite these
-advantages, the initial costs of production and the complexities of maintenance pose significant
-challenges that must be addressed to make this technology feasible and scalable. Aggiungi ref 
-    </p> 
+  <!-- The Modular-Tile Architecture of SSPI -->
+  <h3 id="TheModularTileArchitectureofSSPI">The Modular-Tile Architecture of SSPI</h3>
+  <p class="ex1">
+    The Modular-Tile Architecture of SSPI is a novel approach to designing space solar stations. It involves the use of interconnected
+    modular tiles that can be assembled and deployed in space. This architecture offers flexibility, scalability, and ease of maintenance,
+    making it a promising solution for space-based solar power generation.
+  </p>
 
- 
-   
-Table 1: Data on cost and lifespan of bridge repairs
-<table>
- <tr>
-    <th>Division Layers (m)</th>
-    <th>Module Number</th>
-    <th>Area Ratio (RS)</th>
-    <th>Max Concentration Ration (Cj)</th>
-    <th>Min Concentration Ratio (Cj)</th>
-    <th>Normalized efiiciency (%)</th>
- </tr>
- <tr>
-    <td>0.7 m</td>
-    <td>2</td>
-    <td>13</td>
- </tr>
- <tr>
-    <td>3.3 m</td>
-    <td>4</td>
- </tr>
- <tr>
-    <td>2.6 m</td>
-    <td>5</td>
- </tr>
- <tr>
-    <td>17.4 m</td>
-    <td>7</td>
- </tr>
-  <tr>
-    <td>8.8 m</td>
-    <td>9</td>
-  </tr>
-</table>
+  <!-- Challenges and Future Directions -->
+  <h3 id="ChallengesandFutureDirections">Challenges and Future Directions</h3>
+  <p class="ex1">
+    While space solar stations hold immense potential, they also face significant challenges. These include the development of
+    reliable and self-sustaining systems, cost-effectiveness, and addressing the environmental impact of space-based operations. Future
+    research and innovation will be essential to overcome these challenges and unlock the full potential of this technology.
+  </p>
 
+  <!-- Conclusion -->
+  <h3 id="Conclusion">Conclusion</h3>
+  <p class="ex1">
+    In conclusion, space solar stations offer a promising solution to the increasing global demand for sustainable energy sources.
+    Origami solar panels, in particular, represent a groundbreaking technology that enhances sustainability and efficiency. Collaborative
+    initiatives like the Space Solar Power Initiative (SSPI) and innovative design approaches like the Modular-Tile Architecture pave the
+    way for a sustainable energy future in space. Despite challenges, continued research and development will be crucial to realizing
+    the full potential of space-based solar power.
+  </p>
 
+  <!-- References -->
+  <h3 id="References">References</h3>
+  <p>
+    Atwater, H., Hajimiri, A., & Pellegrino, S. (2015). 'The Space Solar Power Initiative,' in ENGenious, Issue 12, pp. 8-10. California Institute of Technology. Available at: <a href="https://campuspubs.library.caltech.edu/2962/1/2015-ENGenious-IdeaFlow-SSPI.pdf">https://campuspubs.library.caltech.edu/2962/1/2015-ENGenious-IdeaFlow-SSPI.pdf</a>
+  </p>
+  <p>
+    Atwater, H., Hajimiri, A., & Pellegrino, S. (2015). 'Space-Based Solar Power: A New Frontier in Renewable Energy,' in ENGenious, Issue 12, pp. 11-13. California Institute of Technology. Available at: <a href="https://campuspubs.library.caltech.edu/2962/1/2015-ENGenious-IdeaFlow-SSPI.pdf">https://campuspubs.library.caltech.edu/2962/1/2015-ENGenious-IdeaFlow-SSPI.pdf</a>
+  </p>
+  <p>
+    Atwater, H. (2015). Howard Hughes Professor of Applied Physics and Materials Science and Director of the Joint Center for Artificial Photosynthesis. In ENGenious, Issue 12. California Institute of Technology. Available at: <a href="https://campuspubs.library.caltech.edu/2931/1/2015-ENGenious12.pdf">https://campuspubs.library.caltech.edu/2931/1/2015-ENGenious12.pdf</a>
+  </p>
+  <p>
+    Hajimiri, A. (2015). Thomas G. Myers Professor of Electrical Engineering and Executive Officer for Electrical Engineering as well as Director Information Science and Technology. In ENGenious, Issue 12. California Institute of Technology. Available at: <a href="https://campuspubs.library.caltech.edu/2931/1/2015-ENGenious12.pdf">https://campuspubs.library.caltech.edu/2931/1/2015-ENGenious12.pdf</a>
+  </p>
+  <p>
+    Pellegrino, S. (2015). Joyce and Kent Kresa Professor of Aeronautics and Professor of Civil Engineering and Jet Propulsion Laboratory Senior Research Scientist. In ENGenious, Issue 12. California Institute of Technology. Available at: <a href="https://campuspubs.library.caltech.edu/2931/1/2015-ENGenious12.pdf">https://campuspubs.library.caltech.edu/2931/1/2015-ENGenious12.pdf</a>
+  </p>
 
-     
-<h3 id="References">References</h3>
+</body>
 
-   <p>
-   <pre>
- Atwater, H., Hajimiri, A., & Pellegrino, S. (2015). 'The Space Solar Power Initiative,' in ENGenious, Issue 12, pp. 8-10. California Institute of Technology. Available at: https://campuspubs.library.caltech.edu/2962/1/2015-ENGenious-IdeaFlow-SSPI.pdf 
- 
- Atwater, H., Hajimiri, A., & Pellegrino, S. (2015). 'Space-Based Solar Power: A New Frontier in Renewable Energy,' in ENGenious, Issue 12, pp. 11-13. California Institute of Technology. Available at: 
- https://campuspubs.library.caltech.edu/2962/1/2015-ENGenious-IdeaFlow-SSPI.pdf 
- 
- Atwater, H. (2015). Howard Hughes Professor of Applied Physics and Materials Science and Director of the Joint Center for Artificial Photosynthesis. In ENGenious, Issue 12. California Institute of Technology. Available at:   
- https://campuspubs.library.caltech.edu/2931/1/2015-ENGenious12.pdf
- 
- Hajimiri, A. (2015). Thomas G. Myers Professor of Electrical Engineering and Executive Officer for Electrical Engineering as well as Director Information Science and Technology. In ENGenious, Issue 12. California Institute of Technology. Available at:   https://campuspubs.library.caltech.edu/2931/1/2015-ENGenious12.pdf
-
- Pellegrino, S. (2015). Joyce and Kent Kresa Professor of Aeronautics and Professor of Civil Engineering and Jet Propulsion Laboratory Senior Research Scientist. In ENGenious, Issue 12. California Institute of Technology.  Available at:
- https://campuspubs.library.caltech.edu/2931/1/2015-ENGenious12.pdf
-
-   </pre>
-
-
-
-
-
-
-
-
-
-
-
-    
-   </p>
-   
-
-   
- 
-  
-  
-     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-   </table>
-
-    
-     
-    
-                                                                      
-     
-     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    </tr>
-   
-  
-     
-    
-  
-
-  
-
-
-   
-    
-   
-    
-
- </html>
+</html>
